@@ -12,7 +12,6 @@ def main():
         message_history.append({"role": "user", "content": user_input})
 
         reply = chat_with_OpenAI(message_history)
-        length = len(message_history)
         print("Bot: ", reply)
         message_history.append({"role": "assistant", "content": reply})
 
